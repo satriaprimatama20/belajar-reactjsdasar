@@ -1,0 +1,15 @@
+{
+    "makanan1" : {
+        "index" : 1,
+        "nama": "nasi padang"
+    },
+    "makanan2" : {
+        "index" :2,
+        "nama" : "ayam penyet"
+    },
+    "makanan3" : {
+        "index" : 3,
+        "nama" : "ayam geprek"
+    }
+
+}
