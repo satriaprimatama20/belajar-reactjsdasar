@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Sublifecycle from './sublifecycle'
 
+// Lifecycle components digunakan untuk komponen dengan data yang terus berubah atau diupdate
+
 export default class Lifecycle extends Component {
     constructor(props) {
         super(props)
