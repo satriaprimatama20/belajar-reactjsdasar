@@ -4,13 +4,14 @@ import './index.css';
 // import App from './App';
 // import Variable from './variable'
 import reportWebVitals from './reportWebVitals';
-import MAP from './map';
+import Lifecycle from './lifecycle';
+// import MAP from './map';
 // import StateProp from './stateprop';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <MAP/>
+    <Lifecycle/>
   </React.StrictMode>
 );
 
