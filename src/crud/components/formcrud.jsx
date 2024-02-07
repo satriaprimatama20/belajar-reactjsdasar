@@ -1,12 +1,12 @@
 import { Row, Col, Form, Button } from "react-bootstrap";
 
-const FormCrud = ({ nama, deskripsi, harga, handleChange, handleSubmit }) => {
+const FormCrud = ({ nama, deskripsi, harga, handleChange, handleSubmit,id }) => {
   return (
     <>
       <>
         <Row>
           <Col>
-            <h4>Tambah Data</h4>
+            <h4>{id ? "Edit Data" : "Tambah Data"}</h4>
           </Col>
         </Row>
       </>
