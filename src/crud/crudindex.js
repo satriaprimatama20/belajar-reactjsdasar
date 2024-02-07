@@ -82,6 +82,15 @@ export default class Crud extends Component {
 
     hapusData = (id) => {
         console.log("Hapus ID yang :", id);
+        const makananBaru = this.state.makanans
+            .filter((makanan) => makanan.id !==id)
+            .map((filterMakanan) => {
+                return filterMakanan
+            })
+        // makananBaru.splice(makananBaru, 1)
+        this.setState({
+            makanans: makananBaru
+        })
     }
 
     render() {
@@ -93,7 +102,7 @@ export default class Crud extends Component {
                     <h2>CRUD REACT JS</h2>
                 </div>
                 <div className='container mt-6 p-4'>
-                    <TableCrud makanans={this.state.makanans} editData={this.editData} hapusData={this.hapusData}/>
+                    <TableCrud makanans={this.state.makanans} editData={this.editData} hapusData={this.hapusData} />
                     <FormCrud {...this.state} handleChange={this.handleChange} handleSubmit={this.handleSubmit} />
                 </div>
             </div>

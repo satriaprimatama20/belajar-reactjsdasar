@@ -22,7 +22,7 @@ const TableCrud = ({ makanans, editData, hapusData }) => {
                             <td>Rp.{makanan.harga}</td>
                             <td>
                                 <Button className='btn btn-warning' onClick={() => editData(makanan.id)}>Edit</Button>
-                                <Button className='btn btn-danger' onClick={() => editData(makanan.id)}>Delete</Button>
+                                <Button className='btn btn-danger' onClick={() => hapusData(makanan.id)}>Hapus</Button>
                             </td>
                         </tr>
                     )
