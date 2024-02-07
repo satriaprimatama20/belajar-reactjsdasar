@@ -2,16 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App from './App';
-// import Variable from './variable'
+// import Variable from './reactjsdasar/variable';
 import reportWebVitals from './reportWebVitals';
-import Lifecycle from './lifecycle';
-// import MAP from './map';
-// import StateProp from './stateprop';
+// import Lifecycle from './reactjsdasar/lifecycle';
+// import MAP from './reactjsdasar/map';
+// import StateProp from './reactjsdasar/stateprop';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Crud from './crud/crudindex';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Lifecycle/>
+    <Crud/>
   </React.StrictMode>
 );
 
