@@ -1,5 +1,6 @@
 import { Button } from 'react-bootstrap';
 import Table from 'react-bootstrap/Table';
+import Editbtn from './editbtn';
 const TableCrud = ({ makanans, editData, hapusData }) => {
     return (
         <Table striped bordered hover>
@@ -21,7 +22,7 @@ const TableCrud = ({ makanans, editData, hapusData }) => {
                             <td>{makanan.deskripsi}</td>
                             <td>Rp.{makanan.harga}</td>
                             <td>
-                                <Button className='btn btn-warning' onClick={() => editData(makanan.id)}>Edit</Button>
+                                <Editbtn/>
                                 <Button className='btn btn-danger' onClick={() => hapusData(makanan.id)}>Hapus</Button>
                             </td>
                         </tr>

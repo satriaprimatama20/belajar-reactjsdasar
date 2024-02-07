@@ -1,4 +1,5 @@
-import { Row, Col, Form, Button } from "react-bootstrap";
+import { Row, Col, Form, } from "react-bootstrap";
+import Submitbtn from "./submitbtn";
 
 const FormCrud = ({ nama, deskripsi, harga, handleChange, handleSubmit,id }) => {
   return (
@@ -47,9 +48,7 @@ const FormCrud = ({ nama, deskripsi, harga, handleChange, handleSubmit,id }) => 
                   onChange={(event) => handleChange(event)}
                 />
               </Form.Group>
-              <Button variant="primary" type="submit">
-                Submit
-              </Button>
+              <Submitbtn/>
             </Form>
           </Col>
         </Row>
