@@ -47,9 +47,14 @@ export default class Crud extends Component {
             this.setState({
                 makanans: [
                     ...makananselainTerpilih,
-                ]
+                    {
+                        id: this.state.makanans.length + 1,
+                        nama: this.state.nama,
+                        deskripsi: this.state.deskripsi,
+                        harga: this.state.harga
+                    }
+                ],
             })
-            this.updateData();
         }
 
         this.setState({
@@ -75,6 +80,10 @@ export default class Crud extends Component {
         })
     }
 
+    hapusData = (id) => {
+        console.log("Hapus ID yang :", id);
+    }
+
     render() {
         console.log(this.state.makanans);
         return (
@@ -84,7 +93,7 @@ export default class Crud extends Component {
                     <h2>CRUD REACT JS</h2>
                 </div>
                 <div className='container mt-6 p-4'>
-                    <TableCrud makanans={this.state.makanans} editData={this.editData} />
+                    <TableCrud makanans={this.state.makanans} editData={this.editData} hapusData={this.hapusData}/>
                     <FormCrud {...this.state} handleChange={this.handleChange} handleSubmit={this.handleSubmit} />
                 </div>
             </div>
